@@ -10,6 +10,7 @@
 - `casprun` - casper.run(fn);
 - `casplog` - casper.log(message, level);
 - `caspwait` - casper.wait(ms, fn);
+- `caspwaitfor` - casper.waitFor(fn condition, fn then);
 - `caspgethtml`- casper.getHTML();
 - `caspon` - casper.on(eventname, fn);
 - `casptbegin` - [casper.]test.begin(description, testcount, fn);
