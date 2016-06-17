@@ -4,7 +4,7 @@
    [
       {
         "trigger": "caspcreate",
-        "contents": "var casper = require('casper').create(${1:{\n  verbose: ${2:true},\n  logLevel: '${3:debug}'\n});\n$0"
+        "contents": "var casper = require('casper').create(${1:{\n  verbose: ${2:true},\n  logLevel: '${3:debug}'\n\\}});\n$0"
       },
       {
         "trigger": "caspstart",
