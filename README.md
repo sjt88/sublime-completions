@@ -1,7 +1,7 @@
 # Sublime Snippets
 
 ## CasperJS
-- `caspcreate` - casper.require('casper').create(config);
+- `caspcreate` - var casper = casper.require('casper').create(config);
 - `caspstart`- casper.start(url, fn);
 - `caspthen` - casper.then(fn);
 - `caspopen` - casper.open(url, fn);
