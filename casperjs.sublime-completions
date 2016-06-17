@@ -44,7 +44,7 @@
       },
       {
         "trigger": "caspon",
-        "contents": "casper.on('${1:eventname}'${2:, function(${3:e}) {\n  ${4:// content}\n\\}});\n$0"
+        "contents": "casper.on('${1:eventname}', ${2:function(${3:e}) {\n  ${4:// content}\n\\}});\n$0"
       },
       {
         "trigger": "casptbegin",
@@ -57,6 +57,10 @@
       {
         "trigger": "casptassertequals",
         "contents": "${1:casper.}test.assertEquals(${2:true}, ${3:false});\n$0"
+      },
+      {
+        "trigger": "caspton",
+        "contents": "${1:casper.}test.on('${1:eventname}, ${2:function(e) {\n  ${3:// content}\n};\n$0'"
       },
       {
         "trigger": "casptdone",
