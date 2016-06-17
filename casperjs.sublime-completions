@@ -36,7 +36,11 @@
       },
       {
         "trigger": "caspwait",
-        "contents": "casper.wait();"
+        "contents": "casper.wait(${1:ms}${2:, function() {\n  ${3:// content}\n\\}});$0"
+      },
+      {
+        "trigger": "caspwaitfor",
+        "contents": "casper.waitFor(${1:function condition() {\n  ${2:return true;}\n\\}}${3:, function then() {\n  ${4:// do something}\n\\}});\n$0"
       },
       {
         "trigger": "caspgethtml",
