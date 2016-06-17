@@ -1,0 +1,66 @@
+{
+   "scope": "source.js",
+   "completions":
+   [
+      {
+        "trigger": "caspcreate",
+        "contents": "var casper = require('casper').create(${1:{\n  verbose: ${2:true},\n  logLevel: '${3:debug}'\n});\n$0"
+      },
+      {
+        "trigger": "caspstart",
+        "contents": "casper.start('${1:about:blank}', ${2:function(){\n  ${3:// content}\n\\}});\n$0"
+      },
+      {
+        "trigger": "caspthen",
+        "contents": "casper.then(${1:function() {\n  ${2:// content}\n}});\n$0"
+      },
+      {
+        "trigger": "caspopen",
+        "contents": "casper.open('${1:about:blank}', ${2:function(${3:response}) {\n  ${4:// content}\n\\}});\n$0"
+      },
+      {
+        "trigger": "caspthenopen",
+        "contents": "casper.thenOpen('${1:about:blank}', ${2:function(${3:response}) {\n  ${4:// content}\n\\}});\n$0"
+      },
+      {
+        "trigger": "caspevaluate",
+        "contents": "casper.evaluate(${1:function(${3:args}) {\n ${4: // content}\n\\}}${2:, args});\n$0"
+      },
+      {
+        "trigger": "casprun",
+        "contents": "casper.run()"
+      },
+      {
+        "trigger": "casplog",
+        "contents": "casper.log(${1:'${2:message}'}${3:, '${4:info}'});\n$0"
+      },
+      {
+        "trigger": "caspwait",
+        "contents": "casper.wait();"
+      },
+      {
+        "trigger": "caspgethtml",
+        "contents": "casper.getHTML(${1:'${2:selector}'});\n$0"
+      },
+      {
+        "trigger": "caspon",
+        "contents": "casper.on('${1:eventname}'${2:, function(${3:e}) {\n  ${4:// content}\n\\}});\n$0"
+      },
+      {
+        "trigger": "casptbegin",
+        "contents": "casper.test.begin('${1:description}', ${2:testcount}, function(test) {\n  ${3:test content}\n});\n$0"
+      },
+      {
+        "trigger": "casptassert",
+        "contents": "${1:casper.}test.assert(${2:true === false});\n$0"
+      },
+      {
+        "trigger": "casptassertequals",
+        "contents": "${1:casper.}test.assertEquals(${2:true}, ${3:false});\n$0"
+      },
+      {
+        "trigger": "casptdone",
+        "contents": "${1:casper.}test.done();\n$0"
+      }
+   ]
+}
