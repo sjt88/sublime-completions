@@ -69,6 +69,10 @@
       {
         "trigger": "casptdone",
         "contents": "${1:casper.}test.done();\n$0"
+      },
+      {
+        "trigger": "casptcomment",
+        "contents": "${1:casper.}test.comment(${2:'${3:comment}'});\n$0"
       }
    ]
 }

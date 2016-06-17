@@ -17,4 +17,5 @@
 - `casptassert` - [casper.]test.assert(value);
 - `casptassertequals` - [casper.]test.assertEquals(value1, value2);
 - `casptdone` - casper.done(fn);
+- `casptcomment` - casper.comment(comment);
 
