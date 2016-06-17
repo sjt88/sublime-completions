@@ -28,7 +28,7 @@
       },
       {
         "trigger": "casprun",
-        "contents": "casper.run()"
+        "contents": "casper.run(${1:function() {\n ${2:// content}\n\\}});\n$0"
       },
       {
         "trigger": "casplog",
