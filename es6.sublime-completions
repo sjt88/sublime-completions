@@ -27,6 +27,14 @@
         "contents": ".catch(${1:${2:err} => {\n  ${3:// content}\n\\}})${4:;\n}$0"
       },
       {
+        "trigger": "resolve",
+        "contents": "return resolve(${1:args});$0"
+      },
+      {
+        "trigger": "reject",
+        "contents": "return reject(${1:args});$0"
+      },
+      {
         "trigger": "arrow",
         "contents": "${1:(${2:arg})} => {\n  ${3:// content}\n}${4:;\n}$0"
       },
