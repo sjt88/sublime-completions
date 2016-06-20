@@ -1,5 +1,91 @@
 # Sublime Snippets
 
+## ES6
+
+- `import`
+```javascript
+import * from 'module';
+```
+- `export`
+```javascript
+export { variable };
+```
+- `exportdefault`
+```javascript
+export default variable;
+```
+
+- `promise`  
+```javascript
+new Promise((resolve, reject) => {
+  // content
+}).then((arg) => {
+  // content
+}).catch(err => {
+  // content
+});
+```
+
+- `promisethen`
+```javascript
+.then((arg) => {
+	// content
+});
+```
+
+- `promisecatch`
+```javascript
+.catch(err => {
+	// content
+});
+```
+
+- `arrow`
+```javascript
+(arg) => {
+	
+};
+```
+
+- `proxy`
+```javascript
+new Proxy(target, handler);
+```
+
+- `class`
+```javascript
+class ClassName extends SubclassName {
+  constructor(args) {
+    // contents
+  }
+  
+}
+
+```
+
+- `static`
+```javascript
+static methodName(args) {
+  // contents
+}
+
+```
+
+- `get`
+```javascript
+get propertyName(args) {
+  // contents
+}
+
+```
+- `set`
+```javascript
+set propertyName(args) {
+  // contents
+}
+
+```
+
 ## CasperJS
 - `caspcreate` - var casper = casper.require('casper').create(config);
 - `caspstart`- casper.start(url, fn);
