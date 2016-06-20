@@ -1,0 +1,56 @@
+{
+   "scope": "source.js",
+   "completions":
+   [
+      {
+        "trigger": "import",
+        "contents": "import ${1:${2:${3:*} ${4:as ${5:name}}} from '${6:path}'};\n$0"
+      },
+      {
+        "trigger": "export",
+        "contents": "export { ${1:variable} };\n$0"
+      },
+      {
+        "trigger": "exportdefault",
+        "contents": "export default ${1:variable};\n$0"
+      },
+      {
+        "trigger": "promise",
+        "contents": "new Promise((resolve, reject) => {\n  ${1:// content}\n})${2:${3:.then(${5:(${6:value})} => {\n  ${7:// content}\n\\})}${4:.catch(${8:err} => {\n  ${9:// content}\n\\})};\n}$0"
+      },
+      {
+        "trigger": "promisethen",
+        "contents": ".then(${1:${2:(${3:value})} => {\n  ${4:// content}\n\\}})${5:;\n}$0"
+      },
+      {
+        "trigger": "promisecatch",
+        "contents": ".catch(${1:${2:err} => {\n  ${3:// content}\n\\}})${4:;\n}$0"
+      },
+      {
+        "trigger": "arrow",
+        "contents": "${1:(${2:var})} => {\n  ${3:// content}\n}${4:;\n}$0"
+      },
+      {
+        "trigger": "proxy",
+        "contents": "new Proxy(${1:target}, ${2:handler});\n$0"
+      },
+      {
+        "trigger": "class",
+        "contents": "class ${1:ClassName} ${2:extends ${3:SubclassName}} {\n  constructor(${4:args}) {\n    ${5:// contents}\n  }\n  $0\n}\n"
+      },
+      {
+        "trigger": "static",
+        "contents": "static ${1:methodName}(${2:args}) {\n  ${3:// contents}\n}\n$0"
+      },
+      {
+        "trigger": "get",
+        "contents": "get ${1:propertyName}(${2:args}) {\n  ${3:// contents}\n}\n$0"
+      },
+      {
+        "trigger": "set",
+        "contents": "set ${1:propertyName}(${2:args}) {\n  ${3:// contents}\n}\n$0"
+      }
+   ]
+}
+
+
