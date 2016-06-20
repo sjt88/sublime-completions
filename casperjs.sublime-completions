@@ -52,7 +52,7 @@
       },
       {
         "trigger": "casptbegin",
-        "contents": "casper.test.begin('${1:description}', ${2:testcount}, function(test) {\n  ${3:test content}\n});\n$0"
+        "contents": "casper.test.begin('${1:description}', ${2:testcount}, function(test) {\n  ${3:// content}\n});\n$0"
       },
       {
         "trigger": "casptassert",
