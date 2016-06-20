@@ -16,11 +16,11 @@
       },
       {
         "trigger": "promise",
-        "contents": "new Promise((resolve, reject) => {\n  ${1:// content}\n})${2:${3:.then(${5:(${6:value})} => {\n  ${7:// content}\n\\})}${4:.catch(${8:err} => {\n  ${9:// content}\n\\})};\n}$0"
+        "contents": "new Promise((resolve, reject) => {\n  ${1:// content}\n})${2:${3:.then(${5:(${6:arg})} => {\n  ${7:// content}\n\\})}${4:.catch(${8:err} => {\n  ${9:// content}\n\\})};\n}$0"
       },
       {
         "trigger": "promisethen",
-        "contents": ".then(${1:${2:(${3:value})} => {\n  ${4:// content}\n\\}})${5:;\n}$0"
+        "contents": ".then(${1:${2:(${3:arg})} => {\n  ${4:// content}\n\\}})${5:;\n}$0"
       },
       {
         "trigger": "promisecatch",
@@ -28,7 +28,7 @@
       },
       {
         "trigger": "arrow",
-        "contents": "${1:(${2:var})} => {\n  ${3:// content}\n}${4:;\n}$0"
+        "contents": "${1:(${2:arg})} => {\n  ${3:// content}\n}${4:;\n}$0"
       },
       {
         "trigger": "proxy",
